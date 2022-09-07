@@ -25,8 +25,10 @@ export const PersonajeApp = ({
                     <p><strong className='fuerte'>Color de ojos: </strong>{eyes}</p>
                     <p><strong className='fuerte'>Fecha de nacimiento: </strong>{birthday}</p>
                     <p><strong className='fuerte'>Genero: </strong>{gender}</p>
+                    <div>
+                    <Link to={`/DetallePersonaje/${name}`} key={name}></Link>
                     <button className="btn btn-warning"  href='/DetallePersonaje'>Ver detalle</button>
-                    <Link to="/DetallePersonaje"></Link>
+                    </div>
                 </div>
     </div>
   )

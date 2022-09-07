@@ -28,7 +28,7 @@ export const UsePerson = () => {
         method: "GET",
         redirect: "follow",
       };
-      await fetch(
+      const data = await fetch(
         `https://swapi.dev/api/people/?page=${numberPage}`,
         requestOptions
       )
@@ -47,3 +47,4 @@ export const UsePerson = () => {
     disminuir,
   };
 };
+
